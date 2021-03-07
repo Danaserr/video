@@ -1,0 +1,259 @@
+body{
+	font-family: 'Balsamiq Sans', cursive;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: .3s linear;
+}
+.header__list{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+}
+.header__item{
+	margin-right: 82px;
+}
+.header__link{
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+}
+.header__wrapper{
+	padding-top: 1rem;
+}
+.header__active{
+background-color: rgba(0,0,0,.8);
+}
+.header__burger{
+	width: 40px;
+	height: 20px;
+	position: relative;
+	display: none;
+	margin-top:20px;
+}
+.burger__line{
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+}
+.burger__line_odin{
+ 	top: 0;
+}
+.burger__line_dva{
+ 	top: 50%;
+ 	transform: translateY(-50%);
+}
+.burger__line_tri{
+ 	bottom: 0;
+}
+
+/*intro*/
+
+.intro{
+	background:url(../img/glav.jpg) no-repeat;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	padding-top: 200px;
+}
+.intro__title{
+    max-width: 580px;
+    color: white;
+	font-size:50px;
+    line-height: 70px;
+}
+.intro__text {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 540px;
+    padding-top: 20px;
+}
+span {
+    text-transform: uppercase;
+    color:#03658D;
+    font-weight: bold;
+}
+/*intro end*/
+
+/*why*/
+
+.why{
+	padding-top: 50px;
+	text-align: center;
+}
+.why__title{
+	color: #03658D;
+    font-weight: bold;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.opyt{
+	padding-bottom: 40px;
+}
+
+.text {
+    margin: 0 auto;
+    max-width: 460px;
+}
+/*why end*/
+
+/*onas*/
+
+.onas {
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,.1);
+}
+.onas__foto {
+    width: 90%;
+    float: right;
+}
+.onas__foto img{
+	width: 100%;
+}
+
+/*onas end*/
+
+/*kontakty*/
+
+.kontakty{
+	padding-top: 50px;
+}
+p.ttafk {
+    font-size: 30px;
+}
+.street {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.contactiadres {
+    padding: 40px 60px;
+}
+/*kontakty end*/
+
+/*footer*/
+
+.footer{
+	margin-top: 50px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+.footer__text {
+    margin-bottom: 0px;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+/*footer end*/
+
+/*mobile*/
+
+@media screen and (max-width: 1024px){
+	.intro {
+    padding-top: 150px;
+}
+span {
+    font-size: 42px;
+}
+.intro__title {
+    font-size: 42px;
+}
+}
+
+@media screen and (max-width: 991px){
+.luch {
+    padding-bottom: 40px;
+}
+.onas__foto{
+	display: contents;
+}
+.contactiadres {
+    padding: 0;
+    padding-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 480px){
+span {
+    font-size: 35px;
+}
+.intro__title {
+    font-size: 45px;
+    line-height: 55px;
+}
+}
+
+@media screen and (max-width: 400px){
+.intro__title {
+    font-size: 30px;
+    line-height: 40px;
+}
+span{
+	font-size: 25px;
+}
+.intro__text {
+    font-size: 22px;
+}
+}
+@media screen and (max-width: 770px){
+.header__burger{
+	display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.header__nav{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+	z-index: 10;
+	padding-top: 50px;
+	transform: translateX(100%);
+	transition: .3s;
+}
+.header__item{
+	width: 100%;
+
+}
+.header__link{
+	font-size: 27px;
+	line-height: 45px;
+}
+.header__nav-closee{
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 11;
+}
+.header__nav_active{
+	transform: translateX(0);
+}
+.header__nav-close-lin{
+	background-color: white;
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	top:50%;
+}
+.header__nav-close-lin:first-child{
+	transform: translateY(-50%) rotate(45deg);
+}
+.header__nav-close-lin:last-child{
+	transform: translateY(-50%) rotate(-45deg);
+}
+}
